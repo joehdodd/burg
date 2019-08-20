@@ -11,9 +11,49 @@
       margin: 0;
       box-sizing: border-box;
       font-family: sans-serif;
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      background-color: #719dfa;
+    }
+
+    .burg-text {
+      margin: 0px;
+      font-size: 128px;
+      font-weight: bold;
+      font-style: italic;
+      animation: burg-text 0.25s ease-in-out infinite;
+    }
+
+    @keyframes burg-text {
+      from {
+        color: #f2cb;
+      }
+
+      to {
+        color: #fb2c;
+      }
+    }
+
+    .burg-passion-text {
+      margin: 0px;
+      font-size: 32px;
+      font-weight: bold;
+      font-style: italic;
+      position: absolute;
+      top: 250px;
+      left: 150px;
+      transform: rotate(-45deg);
+      color: #03ff4c;
+    }
+
+    .burg-frog {
+      justify-self: end;
     }
 
     .burg-container {
+      margin: -350px 0px;
+      background-color: transparent;
       display: grid;
       align-items: center;
       justify-content: center;
@@ -27,7 +67,7 @@
       font-kerning: 12px;
       font-weight: bold;
       color: #444444;
-      background: #ffffff;
+      background: transparent;
       text-shadow: 1px 0px 1px #cccccc, 0px 1px 1px #eeeeee, 2px 1px 1px #cccccc,
         1px 2px 1px #eeeeee, 3px 2px 1px #cccccc, 2px 3px 1px #eeeeee,
         4px 3px 1px #cccccc, 3px 4px 1px #eeeeee, 5px 4px 1px #cccccc,
@@ -50,8 +90,11 @@
     }
   </style>
   <body>
+    <h1 class="burg-text">BURG!</h1>
+    <h2 class="burg-passion-text">Graphic Design is His Passion!</h2>
+    <img class="burg-frog" src="burgfrog.jpg" alt="Frog" />
     <div class="burg-container">
-      <h2 class="burg-text">So long, Burg!</h2>
+      <h2>So long!</h2>
       <img class="burg-image" src="burg.png" alt="Burg" />
     </div>
   </body>
