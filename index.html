@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    .burg-container {
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 10%;
+      animation: burg 5s ease-in-out infinite;
+    }
+
+    .burg-container > h2 {
+      font-size: 64px;
+      font-kerning: 12px;
+      font-weight: bold;
+      color: #444444;
+      background: #ffffff;
+      text-shadow: 1px 0px 1px #cccccc, 0px 1px 1px #eeeeee, 2px 1px 1px #cccccc,
+        1px 2px 1px #eeeeee, 3px 2px 1px #cccccc, 2px 3px 1px #eeeeee,
+        4px 3px 1px #cccccc, 3px 4px 1px #eeeeee, 5px 4px 1px #cccccc,
+        4px 5px 1px #eeeeee, 6px 5px 1px #cccccc, 5px 6px 1px #eeeeee,
+        7px 6px 1px #cccccc;
+    }
+
+    .burg-image {
+      width: 100%;
+    }
+
+    @keyframes burg {
+      from {
+        transform: rotate3d(0);
+      }
+
+      to {
+        transform: rotate3d(1, 1, 1, 360deg);
+      }
+    }
+  </style>
+  <body>
+    <div class="burg-container">
+      <h2 class="burg-text">So long, Burg!</h2>
+      <img class="burg-image" src="burg.png" alt="Burg" />
+    </div>
+  </body>
+</html>
